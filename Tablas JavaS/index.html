@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+  <html lang="es" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width-device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie-edge">
+      <title>ACA III</title>
+      <link rel="stylesheet" href="style.css">
+      <script type="text/javascript" src="code.js"></script>
+    </head>
+
+      <body> 
+        <!--Mensaje superior sobre los colores -->
+        <div align='center'> 
+          <h1>PROGRAMACION WEB-ACA III</h1>
+          <h2>Colores</h2>
+          <div class="tooltip"></div>
+              <div class="a popup" data-tooltip="rojo" id="rojo" data-value="a" onmouseenter="msj(this)" onmouseleave="msj(this)">
+                <span class="popuptext" name="popuptext" id="myPopup_a"></span>
+              </div>
+              <div class="b popup" data-tooltip="amarillo" id="amarillo" data-value="b" onmouseenter="msj(this)" onmouseleave="msj(this)">
+                <span class="popuptext" name="popuptext" id="myPopup_b"></span>
+              </div>
+              <div class="c popup" data-tooltip="verde" id="verde" data-value="c" onmouseenter="msj(this)" onmouseleave="msj(this)">
+                <span class="popuptext" name="popuptext" id="myPopup_c"></span></span>
+              </div>
+              <div class="d popup" data-tooltip="azul"  id="azul" data-value="d" onmouseenter="msj(this)" onmouseleave="msj(this)">
+                <span class="popuptext" name="popuptext" id="myPopup_d"></span>
+              </div>
+          </div>
+        </div>
+        <br>
+        <br>
+
+      <!--Tablas de multiplicar-->
+        <h2 align ='center'>TABLAS DE MULTIPLICAR</h2> 
+          <h4>Digite un numero</h54>
+           <input type="text" id="buscador" name="buscador" class="buscador">
+           <button type="button" id="buscar" onclick='buscador()'>Multiplicar</button><button onclick='limpiar()'>Limpiar</button>
+           <div id="resultado"></div>
+            <br>
+            <br>
+
+      <!--Acceso de los enlaces-->
+          <h1>Acceso a los enlaces</h1>
+          <div id="cuadro"></div>
+          <h2>Enlaces a varias páginas</h2>
+          <p><a href="http://www.google.com">Google</a></p>
+          <p><a href="https://twitter.com/?lang=es">Twitter</a></p>
+          <p><a href="https://cun.edu.co/">Home-CUN</a></p>
+          <p><a href="https://www.facebook.com/">Facebook</a></p>
+          <p onclick="mostrar(0)">Ver Direcciones URL</p>
+          <p onclick="mostrar(1)">Ver Texto del Enlace</p>
+
+        <!--Ampliacion de fotos-->
+        <h1>Acceso a imágenes</h1>
+        <h2>Pulsa sobre la imagen para verla en grande</h2> 
+        <div id="visor">
+          <h3 id="descripcion">Isla</h3>
+          <img src="/1.jpg" alt="Isla" id="pantalla"/>
+        </div>
+        <div id="muestras">
+          <img onclick="muestra('primera')" name="primera" src="1.jpg" alt="Isla" />
+          <img onclick="muestra(2)" src="2.jpg" alt="Casa de campo" />
+          <img onclick="muestra(3)" src="3.jpg" alt="Papagayos" />
+          <img onclick="muestra(4)" src="4.jpg" alt="Bicicleta" />
+        </div>
+
+        <!--Propiedades de la pagina-->
+        <h1>Pulsar Click en cada mensaje</h1>
+        <div id="caja1"></div>
+          <p class="p" onclick="amarillo()">Color de fondo amarillo</p>
+          <p class="p" onclick="blanco()">Color de fondo blanco</p>
+          <p class="p" onclick="azul()">Color de texto azul</p>
+          <p class="p" onclick="negro()">Volver a color de texto negro</p>
+          <p class="p" onclick="titulo()">Ver el título de la página</p>
+          <p class="p" onclick="pantalla()">Resolución de la Pantalla</p>
+      </body>
+  </html>

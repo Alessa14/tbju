@@ -1,0 +1,139 @@
+/*Colores*/
+.a{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('https://image.freepik.com/vector-gratis/fondo-abstracto-color-rojo_67317-98.jpg');
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+}
+.b{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('https://static.grainger.com/rp/s/is/image/Grainger/1TBF2_AW01?$zmmain$');
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+}
+.c{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('https://www.laparisina.mx/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/2/1/2101l46.jpg');
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+}
+.d{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url('https://image.freepik.com/vector-gratis/fondo-abstracto-color-azul-oscuro-simplemente-liso-telon-fondo_87543-166.jpg');
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+
+}
+
+a,b,c,d::before{
+    content: attr(data-tooltip);
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*Acceso de enlaces*/
+#cuadro{
+  width: 400px;
+  height: 200px; 
+  border: 1px black solid; 
+  float: right;
+  font-family: arial;
+ }
+p{
+  font-size: 1em;
+  font-family: arial; 
+}
+
+/*Estilo de las fotos*/
+#muestras img{
+width: 100px; 
+margin: 10px 30px;
+cursor: pointer, hand;
+}
+
+#visor{
+text-align: center;
+float: right;
+margin: 0 20px;
+}
+
+#pantalla{
+  width: 500px;
+  padding: 30px;
+  border: 5px double green; 
+  background-color: #f4f0c9;
+}
+/*Propiedades de la pagina*/
+#caja1{
+  width: 400px;
+  height: 200px;
+  border: 1px black solid;
+  float: right; 
+}
+
